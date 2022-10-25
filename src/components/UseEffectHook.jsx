@@ -39,7 +39,7 @@ const UseEffectHook = () => {
         //? Clean-up function (componentWillMount)
     
       }
-    }, [third]) //!? Dependency Array
+    }, []) //!? Dependency Array
     
   return (
     <div>UseEffectHook</div>

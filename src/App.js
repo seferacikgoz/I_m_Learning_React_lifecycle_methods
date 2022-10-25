@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LifeCycleMethods from "./components/LifeCycleMethods";
-import Timer from "./components/Timer";
+import UseEffectHook from "./components/UseEffectHook";
 
 function App() {
  const [show, setShow] = useState(true);
@@ -11,8 +11,9 @@ function App() {
         {show ? "Hide" : "Show"}
         </button>
 
-        {show && <LifeCycleMethods/>}
-        <Timer/>
+        {/* {show && <LifeCycleMethods/>} */}
+       {show && <UseEffectHook/>}
+        
       
     </div>
   );
