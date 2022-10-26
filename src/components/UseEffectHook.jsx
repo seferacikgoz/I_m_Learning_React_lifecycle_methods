@@ -44,12 +44,29 @@ const UseEffectHook = () => {
 
      //? componentDidMount + componentDidUpdate
  
-    useEffect(() => {
+     useEffect(() => {
         console.log("Mounting + Updating");  
         setTimeout(()=> {
           alert("Data Fetched")
-        }, 3000)
-      }, [count])
+        }, 1000)
+      }, [])
+ 
+
+       //? componentDidMount + componentDidUpdate
+   /*     const fetchData = () => {
+        console.log("Data Fetched");
+       }
+       useEffect(() => {
+        //! ComponentDidMount
+        const timerId = setInterval(fetchData, 1000);
+        console.log("Mounting")
+       
+          return () => {
+           clearInterval(timerId)
+           console.log("Unmounting");
+       };
+       }, []); */
+       
 
     console.log("Rendering")
 
